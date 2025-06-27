@@ -1,0 +1,17 @@
+.customNav {
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #f8bbd0;
+}
+.nav-item{
+    color: #ec198a !important;
+}
+.nav-link {
+    font-weight: 700;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: #550630 !important;
+    font-weight: bold;
+    font-size: 40px;
+}

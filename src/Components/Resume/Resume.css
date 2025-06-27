@@ -1,0 +1,32 @@
+.text-pink {
+  color: #d63384;
+}
+
+.bg-pink {
+  background-color: #d63384;
+}
+
+.resume-section {
+  background: linear-gradient(135deg, #fff0f6, #fce4ec);
+  color: #333;
+  border-radius: 12px;
+  margin: 2rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.skill-tag {
+  background-color: #d63384;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.05);
+  background-color: #c2185b;
+}

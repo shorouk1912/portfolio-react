@@ -1,0 +1,33 @@
+.project-title {
+  color: #d63384;
+}
+
+.project-heading {
+  color: #d63384;
+}
+
+.custom-arrow {
+  width: 5%;
+}
+
+.arrow-pink {
+  background-color: #d63384;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.arrow-pink:hover {
+  background-color: #b02a6e;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .custom-arrow {
+    width: 12%;
+  }
+
+  .carousel-inner {
+    padding-bottom: 2rem;
+  }
+}
