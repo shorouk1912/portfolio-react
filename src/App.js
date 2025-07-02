@@ -1,25 +1,19 @@
-// App.js
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./Components/Layout/Layout";
-import Home from "./Components/Home/Home";
+import React from 'react'
+import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/Home/Home';
+import Resume from './Components/Resume/Resume';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
-import Resume from "./Components/Resume/Resume";
-
+import Footer from './Components/Footer/Footer';
 export default function App() {
-  const routers = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: "projects", element: <Projects /> },
-        { path: "resume", element: <Resume /> },
-        { path: "contact", element: <Contact /> },
-      ],
-    },
-  ]);
-
-  return <RouterProvider router={routers} />;
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <Projects/>
+      <Resume />
+      <Contact/>
+      <Footer/>
+    </>
+  )
 }

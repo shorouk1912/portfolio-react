@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
 import './Projects.css'
 export default function Projects() {
   const projectList = [
@@ -75,14 +74,14 @@ export default function Projects() {
                       {project.title}
                     </h3>
                     <p>{project.description}</p>
-                    <Link
-                      to={project.github}
+                    <a
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-dark mt-2"
                     >
                       <i className="fab fa-github me-2"></i> View on GitHub
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

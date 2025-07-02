@@ -3,7 +3,7 @@ import { FaEnvelope, FaWhatsapp, FaDownload } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <section className={styles.homeSection}>
+    <section className={styles.homeSection} id="home">
       <div className={styles.container}>
         <div className={styles.info}>
           <h3 className={styles.title}>Hi, I'm Shorouk Taha</h3>

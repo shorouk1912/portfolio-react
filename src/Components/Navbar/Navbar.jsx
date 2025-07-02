@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Navbar.module.css";
 export default function Navbar() {
@@ -7,7 +7,7 @@ export default function Navbar() {
         <header className={`fixed-top shadow-sm ${styles.customNav}`}>
             <nav className="navbar navbar-expand-lg px-2">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">
+                <a className="navbar-brand" href="/">
                 <img
                     src="/Images/sunrise.png"
                     alt="Logo"
@@ -17,7 +17,7 @@ export default function Navbar() {
                     style={{ borderRadius: "50%" }}
                     />
                     <span className="fw-bold" style={{ color: "#AD1457" }}>Shorouk</span>
-                </Link>
+                </a>
                 <button
                 className="navbar-toggler"
                 type="button"
@@ -32,24 +32,24 @@ export default function Navbar() {
                 >
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <a className="nav-link" href="#home">
                         Home
-                    </Link>
+                    </a>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/projects">
+                    <a className="nav-link" href="#projects">
                         Projects
-                    </Link>
+                    </a>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/resume">
+                    <a className="nav-link" href="#resume">
                         Resume
-                    </Link>
+                    </a>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/contact">
+                    <a className="nav-link" href="#contact">
                         Contact
-                    </Link>
+                    </a>
                     </li>
                 </ul>
                 </div>
